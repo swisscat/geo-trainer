@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/geo-trainer/precache-manifest.8e38c98882a378d27580bec94b22672c.js"
+  "/geo-trainer/precache-manifest.b664a440eed127d66ca4f5e584d51355.js"
 );
 
 workbox.clientsClaim();
