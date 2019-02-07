@@ -1,15 +1,15 @@
 {
   "main.css": "/geo-trainer/static/css/main.40cf63e1.chunk.css",
-  "main.js": "/geo-trainer/static/js/main.8a7dfbfb.chunk.js",
-  "main.js.map": "/geo-trainer/static/js/main.8a7dfbfb.chunk.js.map",
+  "main.js": "/geo-trainer/static/js/main.cb9e1255.chunk.js",
+  "main.js.map": "/geo-trainer/static/js/main.cb9e1255.chunk.js.map",
   "static/css/1.db37771b.chunk.css": "/geo-trainer/static/css/1.db37771b.chunk.css",
   "static/js/1.49df9c99.chunk.js": "/geo-trainer/static/js/1.49df9c99.chunk.js",
   "static/js/1.49df9c99.chunk.js.map": "/geo-trainer/static/js/1.49df9c99.chunk.js.map",
   "runtime~main.js": "/geo-trainer/static/js/runtime~main.31b228f3.js",
   "runtime~main.js.map": "/geo-trainer/static/js/runtime~main.31b228f3.js.map",
-  "static/css/1.db37771b.chunk.css.map": "/geo-trainer/static/css/1.db37771b.chunk.css.map",
   "static/css/main.40cf63e1.chunk.css.map": "/geo-trainer/static/css/main.40cf63e1.chunk.css.map",
+  "static/css/1.db37771b.chunk.css.map": "/geo-trainer/static/css/1.db37771b.chunk.css.map",
   "index.html": "/geo-trainer/index.html",
-  "precache-manifest.3ab878eb039377c6bafdcfbea0106ac3.js": "/geo-trainer/precache-manifest.3ab878eb039377c6bafdcfbea0106ac3.js",
+  "precache-manifest.8cddd2bc36cfd115e9ef35a9751e1f10.js": "/geo-trainer/precache-manifest.8cddd2bc36cfd115e9ef35a9751e1f10.js",
   "service-worker.js": "/geo-trainer/service-worker.js"
 }
