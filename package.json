@@ -5,10 +5,19 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "deploy": "node ./node_modules/vue-gh-pages/index.js"
   },
   "dependencies": {
-    "vue": "^2.5.22"
+    "@fortawesome/fontawesome-svg-core": "^1.2.14",
+    "@fortawesome/free-solid-svg-icons": "^5.7.1",
+    "@fortawesome/vue-fontawesome": "^0.1.5",
+    "bootstrap-vue": "^2.0.0-rc.11",
+    "firebase": "^5.8.2",
+    "string-similarity-js": "^2.1.1",
+    "vue": "^2.5.22",
+    "vue-numeric": "^2.3.0",
+    "vue-router": "^3.0.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.4.0",
@@ -17,6 +26,7 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0",
+    "vue-gh-pages": "^1.19.0",
     "vue-template-compiler": "^2.5.21"
   },
   "eslintConfig": {
@@ -38,6 +48,7 @@
       "autoprefixer": {}
     }
   },
+  "homepage": "https://github.com/swisscat/geo-trainer",
   "browserslist": [
     "> 1%",
     "last 2 versions",

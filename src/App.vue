@@ -1,28 +1,60 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Navbar :version="version"></Navbar>
+    <main class="container mt-3">
+      <h1 v-if="!countries.length"><font-awesome-icon icon="spinner" class="fa-spin"/>&nbsp; Loading data...</h1>
+      <router-view v-else :countries="countries"></router-view>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        Made with <font-awesome-icon icon="heart" :style="{ color: 'red' }" /> in Switzerland
+      </div>
+    </footer>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+    import Navbar from "./components/Navbar";
 
-export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
-}
+    export default {
+        name: 'app',
+        props: {
+            version: String,
+            mock: Boolean,
+            loader: Object
+        },
+        components: {
+            Navbar,
+        },
+        mounted () {
+            this.loader.getCountries()
+                .then((countries) => {
+                    this.countries = countries;
+                });
+        },
+        data () {
+            return {
+                countries: []
+            }
+        }
+    }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  html {
+    position: relative;
+    min-height: 100%;
+  }
+
+  #app {
+    margin-bottom: 60px;
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 0;
+    height: 60px;
+    line-height: 60px;
+    width: 100%;
+  }
 </style>

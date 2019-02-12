@@ -1,0 +1,20 @@
+{
+    "version": "0.8",
+    "mock": true,
+    "dataFields": [
+         "population"
+    ],
+    "thresholds": {
+        "name": 0.5,
+        "population": 0.1,
+        "capital": 0.5
+    },
+    "firebase": {
+        "apiKey": "AIzaSyDzs7exOdlW38yAY_YJXjoas9q4BQ1IPHU",
+        "authDomain": "geo-trainer.firebaseapp.com",
+        "databaseURL": "https://geo-trainer.firebaseio.com",
+        "projectId": "geo-trainer",
+        "storageBucket": "geo-trainer.appspot.com",
+        "messagingSenderId": "565371618722"
+    }
+}
