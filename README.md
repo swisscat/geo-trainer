@@ -1,5 +1,7 @@
-# geo-trainer
+# Geo-Trainer
 
+ Train your Geography knowledge while having fun!
+ 
 ## Project setup
 ```
 yarn install

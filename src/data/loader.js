@@ -21,13 +21,13 @@ export default (params) => {
 
     module.getCountries = () => {
         return apiCall("https://restcountries.eu/rest/v2/all")
-            /*.then((countries) => {
+            .then((countries) => {
                 return countries.map((country) => {
                     country.names = [country.name].concat(country.altSpellings.filter(name => name.length > 2));
 
                     return country;
                 });
-            });*/
+            });
     };
 
     return module;
