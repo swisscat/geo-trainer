@@ -2,7 +2,7 @@
     "version": "0.8",
     "mock": true,
     "dataFields": [
-         "population"
+        "name", "population", "capital"
     ],
     "thresholds": {
         "name": 0.5,
