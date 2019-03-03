@@ -6,7 +6,9 @@ export default (params) => {
     const similarityThresholds = params.similarityThresholds || {
         name: 0.9,
         population: 0.9,
-        capital: 0.9
+        capital: 0.9,
+        currency: 0.2,
+        language: 0.2,
     };
 
     module.validateAnswer = (countryData, questionType, answer) => {
@@ -23,6 +25,14 @@ export default (params) => {
                 return Math.abs((answer - countryData.population) / countryData.population) < threshold;
 
             case 'capital':
+                break;
+
+            case 'currency':
+                possibilities = countryData.currency;
+                break;
+
+            case 'language':
+                possibilities = countryData.language;
                 break;
 
             default:

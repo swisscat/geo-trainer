@@ -1,10 +1,12 @@
 {
-    "version": "0.8",
+    "version": "0.9",
     "mock": true,
     "dataFields": [
-        "name", "population", "capital"
+        "name", "population", "capital", "currency", "language"
     ],
     "thresholds": {
+        "language": 0.1,
+        "currency": 0.1,
         "name": 0.5,
         "population": 0.1,
         "capital": 0.5

@@ -25,6 +25,9 @@ export default (params) => {
                 return countries.map((country) => {
                     country.names = [country.name].concat(country.altSpellings.filter(name => name.length > 2));
 
+                    country.currency = country.currencies.map(currency => currency.name);
+                    country.language = country.languages.map(language => language.name);
+
                     return country;
                 });
             });

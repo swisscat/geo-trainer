@@ -22,7 +22,15 @@
                         'key': 'population',
                         'formatter': population => population.toLocaleString()
                     },
-                    'capital'
+                    'capital',
+                    {
+                        'key': 'currency',
+                        'formatter': currencyNames => currencyNames.join(', ')
+                    },
+                    {
+                        'key': 'language',
+                        'formatter': languageNames => languageNames.join(', ')
+                    }
                 ]
             }
         }
